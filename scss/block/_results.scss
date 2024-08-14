@@ -1,0 +1,94 @@
+.results {
+  background-color: $res-bgc;
+  background-repeat: no-repeat;
+  background-image: url(/img/res_top.svg), url(/img/res_bottom.svg);
+  background-position: left top, right bottom;
+  padding-top: 140px;
+  padding-bottom: 164px;
+
+  &__title {
+    font-family: $font-family;
+    max-width: 932px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 48px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title span {
+    color: $color;
+  }
+
+  &__item {
+    margin-bottom: 48px;
+    padding-top: 35px;
+    padding-bottom: 78px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/res_item.svg), url(/img/res_img1.svg);
+    background-position: center top, center bottom;
+  }
+  &__text {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  &__sub_title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: $color;
+    margin-bottom: 2px;
+  }
+  &__des {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    text-align: center;
+    color: #fff;
+  }
+  &__item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-image: url(/img/res_item.svg), url(/img/res_img2.png);
+    background-position: center top, center bottom;
+  }
+  &__item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-image: url(/img/res_item.svg), url(/img/res_img3.png);
+    background-position: center top, center bottom;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    &__text {
+      width: 573px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    &__list {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__text {
+      width: 350px;
+    }
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.manage {
+  padding-bottom: 64px;
+  padding-top: 64px;
+  background-color: $manage-bgc;
+  background-repeat: no-repeat;
+  background-image: url(/img/manage_bgi.svg);
+  background-position: right top;
+
+  &__title {
+    background-repeat: no-repeat;
+    background-image: url(/img/manage.line.svg);
+    background-position: left top;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #fff;
+    width: 224px;
+    padding-top: 32px;
+    margin-bottom: 56px;
+  }
+  &__item {
+    margin-bottom: 48px;
+    text-align: center;
+    padding-top: 88px;
+    background-repeat: no-repeat;
+    background-image: url(/img/manage_img1.svg);
+    background-position: center top;
+  }
+  &__item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-image: url(/img/manage_img2.svg);
+    background-position: center top;
+  }
+  &__item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-image: url(/img/manage_img3.svg);
+    background-position: center top;
+    margin-bottom: 0;
+  }
+  &__sub_title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: $footer-bgc;
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fff;
+    opacity: 0.8;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+    &__title {
+      width: 445px;
+      margin-bottom: 64px;
+    }
+    &__item {
+      text-align: start;
+      padding-top: 0;
+      padding-left: 95px;
+      background-position: left center;
+      margin-bottom: 32px;
+    }
+    &__item:nth-child(2) {
+      background-position: left center;
+    }
+    &__item:nth-child(3) {
+      background-position: left center;
+      margin-bottom: 0;
+    }
+    &__sub_title {
+      margin-bottom: 16px;
+    }
+    &__text {
+      width: 478px;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-position: right bottom;
+    &__block {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 100%;
+    }
+  }
+}

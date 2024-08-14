@@ -1,0 +1,50 @@
+.footer {
+  background-color: $footer-bgc;
+  padding-top: 80px;
+  padding-bottom: 110px;
+  background-repeat: no-repeat;
+  background-image: url(/img/footer_bgi.svg);
+  background-position: left bottom;
+
+  &__block {
+    text-align: center;
+  }
+  &__title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #012f34;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #012f34;
+    border: 2px solid #012f34;
+    border-radius: 24px;
+    padding: 10px 32px;
+    transition: all 0.4s ease;
+  }
+  &__btn:hover {
+    border: 2px solid #012f34;
+    background-color: #012f34;
+    color: #fff;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 85px;
+    padding-right: 85px;
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    &__block {
+      justify-content: space-around;
+    }
+  }
+}
