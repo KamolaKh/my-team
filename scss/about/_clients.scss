@@ -1,0 +1,49 @@
+.clients {
+  background-color: #002529;
+  padding-top: 88px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-image: url(/img/client_top1.svg);
+  background-position: left top;
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+  &__item {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    background-image: url(/img/client_top2.svg);
+    background-position: left top;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      width: 100px;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    &__list {
+      gap: 80px;
+    }
+    &__img {
+      width: 165px;
+    }
+  }
+}
